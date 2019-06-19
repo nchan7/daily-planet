@@ -4,3 +4,9 @@
 <p><%= article.body %></p>
 
 <h6><a href="/articles">BACK TO ARTICLES</a></h6>
+
+<a href="/articles/<%= id%>/edit">Edit this article</a>
+
+<form method="POST" action="/articles/<%= id%>/?_method=DELETE">
+    <input type="submit" value="Delete">
+</form>
